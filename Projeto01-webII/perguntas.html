@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>  
+    <style>
+        .titulo-pagina{
+            text-align: center;
+        }
+        .bloco-perguntas{
+            width: 100%;
+            height: 80vh;
+            padding: 5px;
+            display: flex; /*responsividade, flexibilizar permitindo que seus elemenmtos se ajustem automaticamente ao espaco disponível*/
+            align-items: center; /*eixo secundário*/
+            justify-content: center;
+        }
+        .pergunta{
+            background-color: rgb(205, 255, 212);
+            width: 800px;
+            min-height: 10vh;
+            border: 1px solid rgb(234, 230, 230);
+            border-radius: 15px;
+            margin: 10px auto;
+            padding: 5px;
+        }
+        .pergunta:nth-child(odd){
+            background-color: rgb(239, 184, 216);
+        }
+        
+        .opcao{
+            display: block;
+        }
+       
+        .tab{
+            display: none;
+        }
+        .btns{
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .txt-perg{
+            font-size: 22px;
+            font-style: italic;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="titulo-pagina">Seja bem-vindo, usuário!</h2>
+    </header>
+    <main class="bloco-perguntas">
+        <form action="resultado.html" id="regForm">
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 1</label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 1
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 2
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 3
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 4
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 5
+                </label>
+            </div>
+
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 2</label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 1
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 2
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 3
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 4
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 5
+                </label>
+            </div>
+           
+            <div class="pergunta tab">
+                <label for="" class="txt-perg">Questão 3</label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 1
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 2
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 3
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 4
+                </label>
+                <label for="" class="opcao">
+                    <input type="radio" name="q1" id="">
+                    resposta 5
+                </label>
+            </div>
+
+            <div>
+                <div class="btns">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+                </div>
+              </div>
+              
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+            
+        </form>
+    </main>
+    <footer></footer>
+    <script src="assets/js/multstep.js"></script>
+</body>
+</html>

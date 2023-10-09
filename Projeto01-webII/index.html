@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz - Página Inicial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            background-image: url(assets/img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex; /*responsividade, flexibilizar permitindo que seus elemenmtos se ajustem automaticamente ao espaco disponível*/
+            justify-content: center; /*alinhamento do eixo principal */
+            align-items: center;   /* alinhamento do eixo secundário*/
+            gap: 15px;
+        }
+        .bloco1,.bloco2{
+            width: 25%;
+            height: 450px;
+            border: 1px solid rgb(165, 164, 164);
+            background-color: rgba(211, 210, 210, 0.465);
+            border-radius: 20px;
+            padding: 15px;    
+        }
+        .titulo{
+            text-align:center;
+            margin: 20px 0px;
+        }
+        .bloco1 p{
+            text-align: justify;
+            line-height: 30px;
+            font-size: 18px;
+        }
+        .input-login{
+            width: 80%;
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: none;
+            display: block;
+            margin: 10px auto;   
+        }
+        .btn-login{
+            width:30%;
+            height: 30px;
+            border-radius: 15px; 
+            display: block;
+            margin: auto; 
+            border: 1px solid rgb(212, 216, 230);
+            background-color: rgb(9, 9, 87);
+            color: white;
+        }
+        .btn-login:hover{
+            background-color: rgb(0, 0, 0);
+            color: yellow;
+            transition: 1s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bloco1">
+            <h2 class="titulo">Projeto - Quizz Web</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque ipsum nisi dolorum optio? Dolorum perferendis iste vero, voluptatum, accusantium temporibus nemo nisi nihil ipsa veniam dolorem ratione minima sunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam quaerat, eum magnam quisquam explicabo placeat perferendis officia omnis, aliquam modi illo sed illum repellendus! Veritatis recusandae id quod tenetur!</p>
+        </div>
+        <div class="bloco2">
+            <h2 class="titulo">Login</h2>
+            <form action="perguntas.html">
+                <input type="email" placeholder="E-mail..." class="input-login">
+                <input type="password" placeholder="Senha..." class="input-login">
+                <input type="submit" value="Acessar" class="btn-login">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
